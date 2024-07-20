@@ -1,0 +1,65 @@
+[package]
+name = "carrot_devtools"
+version = "0.1.0"
+edition = "2021"
+
+[build]
+rustflags=["-C prefer-dynamic"]
+
+[profile.release]
+strip = true
+debug = false
+
+[source.crates-io]
+replace-with = "vendored-sources"
+
+[source.vendored-sources]
+directory = "vendor"
+
+[dependencies]
+#libc = "*"
+#rand = "*"
+crossterm = "*"
+#serde = "*"
+#serde_derive = "*"
+#confy = "*"
+#chrono = "*"
+
+[dependencies.carrot_libs]
+path = "../carrot-libs"
+
+[[bin]]
+name = "case"
+path = "src/case.rs"
+
+[[bin]]
+name = "col"
+path = "src/col.rs"
+
+[[bin]]
+name = "count"
+path = "src/count.rs"
+
+[[bin]]
+name = "cut"
+path = "src/cut.rs"
+
+#[[bin]]
+#name = "div"
+#path = "src/div.rs"
+
+[[bin]]
+name = "seek"
+path = "src/seek.rs"
+
+[[bin]]
+name = "shrink"
+path = "src/shrink.rs"
+
+[[bin]]
+name = "split"
+path = "src/split.rs"
+
+[[bin]]
+name = "tr"
+path = "src/tr.rs"
