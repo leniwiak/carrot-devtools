@@ -9,4 +9,13 @@
 ### Added on 12.07.2024
 
 - TR: Fixed some random substraction with overflow error
-- CUT: 
+
+# Release 0.2.0:
+
+### Waiting features:
+
+- CLR: Clear terminal (NEW PROGRAM!)
+- REFRESH: Reset terminal (NEW PROGRAM!)
+- RANDOM: Random number generator (NEW PROGRAM!)
+- STAY: Allows you to stop text scrolling on console if it's too long (NEW PROGRAM!)
+- SEP: Separate words (NEW PROGRAM!)
